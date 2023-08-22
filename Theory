@@ -1,0 +1,18 @@
+
+
+ #   Data structures:
+        Arrays: An array is a data structure that stores data in a linear fashion.
+        Linked lists: A linked list is a data structure that stores data in a non-linear fashion.
+        Stacks: A stack is a data structure that stores data in a last-in, first-out (LIFO) fashion.
+        Queues: A queue is a data structure that stores data in a first-in, first-out (FIFO) fashion.
+        Trees: A tree is a data structure that stores data in a hierarchical fashion.
+        Graphs: A graph is a data structure that stores data in a network fashion.
+
+#    Algorithms:
+        Searching algorithms: A searching algorithm is a procedure for finding a specific item in a data structure.
+        Sorting algorithms: A sorting algorithm is a procedure for ordering the elements of a data structure.
+        Divide and conquer algorithms: A divide and conquer algorithm is a recursive algorithm that breaks a problem down into smaller subproblems.
+        Greedy algorithms: A greedy algorithm is an algorithm that makes the locally optimal choice at each step.
+        Recursion: Recursion is a programming technique that calls itself to solve a problem.
+        Backtracking: Backtracking is a recursive algorithm that tries all possible solutions to a problem.
+        Dynamic programming: Dynamic programming is an algorithmic technique for solving problems by breaking them down into smaller subproblems and storing the results of the subproblems.

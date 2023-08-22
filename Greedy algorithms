@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+// Function to find the minimum number of coins required
+// to make a given amount using a set of coin denominations
+void minCoins(int coins[], int numCoins, int amount) {
+    int coinCount[numCoins];
+    
+    // Initialize coinCount array with 0s
+    for (int i = 0; i < numCoins; i++) {
+        coinCount[i] = 0;
+    }
+    
+    // Traverse through all coin denominations in descending order
+    for (int i = numCoins - 1; i >= 0; i--) {
+        while (amount >= coins[i]) {
+            coinCount[i]++;
+            amount -= coins[i];
+        }
+    }
+    
+    // Print the minimum coin count for each denomination
+    printf("Minimum coins required:\n");
+    for (int i = 0; i < numCoins; i++) {
+        if (coinCount[i] > 0) {
+            printf("%d coin(s) of denomination %d\n", coinCount[i], coins[i]);
+        }
+    }
+}
+
+int main() {
+    int coins[] = {1, 5, 10, 20, 50}; // Coin denominations
+    int numCoins = sizeof(coins) / sizeof(coins[0]);
+    int amount;
+
+    printf("Enter the amount: ");
+    scanf("%d", &amount);
+
+    minCoins(coins, numCoins, amount);
+
+    return 0;
+}
